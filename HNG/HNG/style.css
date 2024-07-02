@@ -1,0 +1,111 @@
+.profile-pic {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+}
+@media only screen and (min-width: 768px) {
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+}
+@media only screen and (max-width: 479px) {
+    .profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+}
+body {
+    background-color: #F2E6D8; /* Cream color */
+    padding: 20px;
+}
+.name {
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    top: 20px;
+    left: 20px;
+}
+
+
+.slider-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+.slider-container:hover {
+    transform: scale(1.05);
+  }
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #730217;
+  color: #F2E6D8;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.additional-text, .freelance-text, .disciplined-text, .vision-text {
+    padding: 20px;
+    color: #f0f0f0;
+    background-color: #730217;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.additional-text:hover,.freelance-text:hover, .disciplined-text:hover, .vision-text:hover, .freelance-text:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #ca0529;
+}
+a {
+    display: block;
+    width: 150px;
+    background-color: #730217;
+    color: wheat;
+    margin-top: 10px;
+    border-radius: 5px;
+    
+}
